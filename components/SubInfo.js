@@ -130,7 +130,7 @@ export const EndDate = () => {
           color: COLORS.primary,
         }}
       >
-        12:31
+        {assets.time}
       </Text>
     </View>
   );

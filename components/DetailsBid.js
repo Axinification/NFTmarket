@@ -4,6 +4,7 @@ import { View, Text, Image } from "react-native";
 import { EthPrice } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
+// Details bidder bar
 const DetailsBid = ({ bid }) => {
   return (
     <View

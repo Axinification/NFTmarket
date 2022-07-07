@@ -3,6 +3,8 @@ import { TouchableOpacity, Text, Image } from "react-native";
 
 import { COLORS, SIZES, FONTS, SHADOWS } from "../constants";
 
+
+// Leave & Heart buttons
 export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   return (
     <TouchableOpacity
@@ -28,6 +30,7 @@ export const CircleButton = ({ imgUrl, handlePress, ...props }) => {
   );
 };
 
+// Place a bid button
 export const RectButton = ({ minWidth, fontSize, handlePress, ...props }) => {
   return (
     <TouchableOpacity

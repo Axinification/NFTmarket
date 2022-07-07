@@ -1,5 +1,6 @@
 // Dummy name
 const name = "Aleksander"
+const time = "21:31"
 
 // Utility graphics
 import badge from "../assets/icons/badge.png";
@@ -33,6 +34,7 @@ import avatar07 from "../assets/images/avatar07.png";
 
 export default {
   name,
+  time,
 
   badge,
   eth,

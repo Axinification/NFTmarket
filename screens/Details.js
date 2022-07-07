@@ -4,6 +4,7 @@ import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-nati
 import { COLORS, SIZES, assets, SHADOWS, FONTS } from "../constants";
 import { CircleButton, RectButton, SubInfo, DetailsAsc, DetailsBid, FocusedStatusBar } from "../components";
 
+// Header with image and buttons
 const DetailsHeader = ({ data, navigation }) => (
   <View style={{ width: "100%", height: 373 }}>
     <Image
@@ -27,6 +28,7 @@ const DetailsHeader = ({ data, navigation }) => (
   </View>
 );
 
+// Details page
 const Details = ({ route, navigation }) => {
   const { data } = route.params;
 
@@ -37,22 +39,7 @@ const Details = ({ route, navigation }) => {
         backgroundColor="transparent"
         translucent={true}
       />
-
-      <View
-        style={{
-          width: "100%",
-          position: "absolute",
-          bottom: 0,
-          paddingVertical: SIZES.font,
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "rgba(255,255,255,0.5)",
-          zIndex: 1,
-        }}
-      >
-        <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
-      </View>
-
+    {/* Bidders */}
       <FlatList
         data={Array.prototype.reverse.call(data.bids)}
         renderItem={({ item }) => <DetailsBid bid={item} />}
@@ -83,6 +70,20 @@ const Details = ({ route, navigation }) => {
           </React.Fragment>
         )}
       />
+      <View
+        style={{
+          width: "100%",
+          position: "absolute",
+          bottom: 0,
+          paddingVertical: SIZES.font,
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "rgba(255,255,255,0.5)",
+          zIndex: 1,
+        }}
+      >
+        <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
+      </View>
     </SafeAreaView>
   );
 };

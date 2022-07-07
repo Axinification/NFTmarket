@@ -6,6 +6,7 @@ import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 import { SubInfo, EthPrice, NFTTitle } from "./SubInfo";
 import { RectButton, CircleButton } from "./Button";
 
+// Home NFT card
 const NFTCard = ({ data }) => {
   const navigation = useNavigation();
 
@@ -39,6 +40,7 @@ const NFTCard = ({ data }) => {
         <CircleButton imgUrl={assets.heart} right={10} top={10} />
       </View>
 
+      {/* Bidders in circles */}
       <SubInfo bids={data.bids} />
 
       <View style={{ width: "100%", padding: SIZES.font }}>

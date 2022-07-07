@@ -5,7 +5,9 @@ import { EthPrice, NFTTitle } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
 const DetailsAsc = ({ data }) => {
+  // Use shortened version for base
   const [text, setText] = useState(data.description.slice(0, 100));
+  // useState React hook
   const [readMore, setReadMore] = useState(false);
 
   return (
@@ -59,6 +61,7 @@ const DetailsAsc = ({ data }) => {
                 fontSize: SIZES.small,
                 fontFamily: FONTS.semiBold,
               }}
+              // Decide if full or shortened text (Read more text onPress function)
               onPress={() => {
                 if (!readMore) {
                   setText(data.description);
