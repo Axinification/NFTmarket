@@ -3,6 +3,9 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 
+import Home from './screens/Home';
+import Details from './screens/Details';
+
 const Stack = createStackNavigator();
 
 const theme = {
@@ -15,11 +18,11 @@ const theme = {
 
 const App = () => {
   const [loaded] = useFonts({
-    InterBold: require("./assets/fonts/Inter-Bold.ttf"),
-    InterSemiBold: require("./assets/fonts/Inter-SemiBold.ttf"),
-    InterMedium: require("./assets/fonts/Inter-Medium.ttf"),
-    InterRegular: require("./assets/fonts/Inter-Regular.ttf"),
-    InterLight: require("./assets/fonts/Inter-Light.ttf"),
+    OswaldBold: require("./assets/fonts/Oswald-Bold.ttf"),
+    OswaldSemiBold: require("./assets/fonts/Oswald-SemiBold.ttf"),
+    OswaldMedium: require("./assets/fonts/Oswald-Medium.ttf"),
+    OswaldRegular: require("./assets/fonts/Oswald-Regular.ttf"),
+    OswaldLight: require("./assets/fonts/Oswald-Light.ttf"),
   });
 
   if (!loaded) return null;
