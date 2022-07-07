@@ -28,7 +28,7 @@ const NFTData = [
         id: "BID-13",
         name: "Rosie Wong",
         price: 4.75,
-        image: "./assets/images/avatar01",
+        image: assets.avatar01,
         date: "December 31, 2019 at 3:50 PM",
       },
     ],

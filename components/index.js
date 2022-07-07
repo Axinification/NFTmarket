@@ -4,7 +4,7 @@ import { RectButton, CircleButton } from "./Button";
 import { SubInfo, People, EndDate, EthPrice, NFTTitle } from "./SubInfo";
 import DetailsBid from "./DetailsBid";
 import FocusedStatusBar from "./FocusedStatusBar";
-import DetailsDesc from './DetailsDesc';
+import DetailsAsc from './DetailsAsc';
 
 export {
   HomeHeader,
@@ -18,5 +18,5 @@ export {
   NFTTitle,
   DetailsBid,
   FocusedStatusBar,
-  DetailsDesc,
+  DetailsAsc,
 };

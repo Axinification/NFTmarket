@@ -37,8 +37,8 @@ export const SHADOWS = {
       width: 0,
       height: 1,
     },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
 
     elevation: 3,
   },
@@ -48,8 +48,8 @@ export const SHADOWS = {
       width: 0,
       height: 3,
     },
-    shadowOpacity: 0.29,
-    shadowRadius: 4.65,
+    shadowOpacity: 0.3,
+    shadowRadius: 4.5,
 
     elevation: 7,
   },
@@ -59,8 +59,8 @@ export const SHADOWS = {
       width: 0,
       height: 7,
     },
-    shadowOpacity: 0.41,
-    shadowRadius: 9.11,
+    shadowOpacity: 0.4,
+    shadowRadius: 9,
 
     elevation: 14,
   },

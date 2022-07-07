@@ -58,6 +58,7 @@ const ImageCmp = ({ imgUrl, index }) => {
         width: 48,
         height: 48,
         marginLeft: index === 0 ? 0 : -SIZES.font,
+        ...SHADOWS.light,
       }}
     />
   );
@@ -65,11 +66,10 @@ const ImageCmp = ({ imgUrl, index }) => {
 
 export const People = ({ bids }) => {
   const bidsArray = Object.values(bids)[0]
-  console.log(bidsArray.length)
   if(bidsArray.length > 2) {
     return (
         <View style={{ flexDirection: "row" }}>
-            {[bidsArray[0].image, bidsArray[1].image, bidsArray[2].image].map(
+            {[bidsArray[bidsArray.length-1].image, bidsArray[bidsArray.length-2].image, bidsArray[bidsArray.length-3].image].map(
               (imgUrl, index) => (
                 <ImageCmp imgUrl={imgUrl} index={index} key={`People-${index}`} />
               )
@@ -79,7 +79,7 @@ export const People = ({ bids }) => {
   } else if (bidsArray.length == 2) {
     return (
       <View style={{ flexDirection: "row" }}>
-          {[bidsArray[0].image, bidsArray[1].image].map(
+          {[bidsArray[bidsArray.length-1].image, bidsArray[bidsArray.length-2].image].map(
             (imgUrl, index) => (
               <ImageCmp imgUrl={imgUrl} index={index} key={`People-${index}`} />
             )
@@ -89,7 +89,7 @@ export const People = ({ bids }) => {
   } else if (bidsArray.length == 1) {
     return (
       <View style={{ flexDirection: "row" }}>
-          {[bidsArray[0].image].map(
+          {[bidsArray[bidsArray.length-1].image].map(
             (imgUrl, index) => (
               <ImageCmp imgUrl={imgUrl} index={index} key={`People-${index}`} />
             )

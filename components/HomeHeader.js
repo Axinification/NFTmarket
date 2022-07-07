@@ -43,8 +43,8 @@ const HomeHeader = ({ onSearch }) => {
               position: "absolute",
               width: 30,
               height: 30,
-              bottom: -5,
-              right: -5,
+              bottom: 0,
+              right: 0,
             }}
           />
         </View>
@@ -60,7 +60,7 @@ const HomeHeader = ({ onSearch }) => {
             textAlign: "center",
           }}
         >
-          Hello Victoria 👋
+          Hello {assets.name} 👋
         </Text>
 
         <Text

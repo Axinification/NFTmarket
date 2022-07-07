@@ -1,3 +1,6 @@
+// Dummy name
+const name = "Aleksander"
+
 // Utility graphics
 import badge from "../assets/icons/badge.png";
 import eth from "../assets/icons/eth.png";
@@ -12,12 +15,12 @@ import logoCoin from "../assets/images/logo-coin.png";
 
 // NFTs dummies
 import nft01 from "../assets/images/nft01.png";
-import nft02 from "../assets/images/nft02.jpeg";
-import nft03 from "../assets/images/nft03.jpeg";
-import nft04 from "../assets/images/nft04.jpeg";
-import nft05 from "../assets/images/nft05.jpeg";
-import nft06 from "../assets/images/nft06.jpeg";
-import nft07 from "../assets/images/nft07.jpeg";
+import nft02 from "../assets/images/nft02.png";
+import nft03 from "../assets/images/nft03.png";
+import nft04 from "../assets/images/nft04.png";
+import nft05 from "../assets/images/nft05.png";
+import nft06 from "../assets/images/nft06.png";
+import nft07 from "../assets/images/nft07.png";
 
 // Avatar dummy
 import avatar01 from "../assets/images/avatar01.png";
@@ -29,6 +32,8 @@ import avatar06 from "../assets/images/avatar06.png";
 import avatar07 from "../assets/images/avatar07.png";
 
 export default {
+  name,
+
   badge,
   eth,
   heart,
